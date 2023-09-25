@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+  } 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'Quicksand';
+}
+
+body{
+    background-color: #020228;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(9, 2, 51, 0.5);
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position:fixed;
+}
+.menu img{
+    height: 35px;
+    margin: 10px;
+}
+
+.menu_item{
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.menu_item_button{
+    background-color: blueviolet;
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+}
+.menu_item_button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.bg-gradiente-button {
+    padding: 16px 40px;
+    background: linear-gradient(45deg, blueviolet, rgb(5, 5, 78));
+    border-radius: 500px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+.bg-gradiente-button:hover {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+}
+.bg-gradiente-button:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+  }
+
+#servicos{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+#servicos a{
+    text-decoration:none;
+    padding: 20px;
+    color: #9e86ff;
+}
+
+footer{
+    background:#020228;
+}
+
+footer p{
+    margin-top: 50px;
+    text-align: center;
+    color: #9e86ff;
+}
+
+#redes_sociais{
+    text-align: center;
+    margin-top: 50px;
+}
+#redes_sociais img{
+    padding: 15px;
+    height: 25px;
+}

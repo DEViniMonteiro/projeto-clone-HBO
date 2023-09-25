@@ -1,0 +1,292 @@
+@import url(./global.css);
+
+/* Header */
+header{
+    padding: 150px 0 250px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 6s ease-in infinite alternate;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#stream{
+    text-align: center;
+}
+#stream img{
+    padding: 0px 10px 0px 10px;
+}
+
+#h1_header{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+#h1_header span{
+    font-size: 2rem;
+}
+
+header span{
+    font-weight: 200;
+}
+#divisor{
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background-color: #7a68c2;
+    margin: auto;
+}
+
+#offer{
+    color: white;
+    text-align: center;
+}
+
+#offer p {
+    font-size: 20px;
+}
+#offer p:nth-child(2){
+    margin-top: -50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#offer span{
+    font-size: 15px;
+}
+
+#button_offer{
+    background: linear-gradient(45deg, blueviolet, rgb(5, 5, 78));
+    padding: 15px 40px 15px 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    animation: wiglle 2s linear infinite;
+}
+
+#button_offer {
+    padding: 16px 40px;
+    background: linear-gradient(45deg, blueviolet, rgb(5, 5, 78));
+    border-radius: 500px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+#button_offer:hover {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+}
+#button_offer:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+  }
+@keyframes wiglle {
+    0%{
+        transform: rotate(0);
+    }
+    15%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%, 100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+header p{
+    color: white;
+    font-size: 20;
+    font-weight: 200;
+    margin: 50px 0px 50px 0px;
+}
+/* End Header */
+
+
+
+/* Planos */
+#planos{
+    background: url(../images/background-movies-series.png) no-repeat;
+    background-size: cover;
+    height: 750px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.container-planos h1{
+    color: white;
+}
+
+#container-cards-planos{
+    width: 800px;
+    display: flex;
+    margin: auto;
+
+}
+
+
+.card_offer{
+    background: linear-gradient(0deg, transparent, #3b1e63);
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.titulo-plano{
+    color: white;
+    margin-bottom: 20px;
+}
+.titulo-plano span:nth-child(1){
+    color: #ff00e5;
+    font-weight: bold;
+    text-align: right;
+}
+.titulo-plano span:nth-child(2){
+    font-size: 11px;
+}
+
+.card_offer p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.card_offer a{
+    background: linear-gradient(45deg, blueviolet, rgb(5, 5, 78));
+    padding: 15px 40px 15px 40px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    align-items:end;
+    font-size: 10px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+.card-animation-1:hover{
+    transform: rotateY(40deg);
+}
+
+/* End Planos */
+
+/* Galeria */
+.titulo-galeria{
+    color: white;
+    text-align: center;
+}
+
+.galeria{
+    margin: 100px auto;
+
+}
+.galeria-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card-galeria{
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+.card-galeria:hover{
+    transform: scale(1.05);
+    border: 2px solid #b535f6;
+  }
+
+  .card-galeria:hover .contents__image {
+    opacity: 0;
+  }
+
+  .contents__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+  }
+
+/* HBO Content */
+
+.card-galeria:nth-child(1):hover {
+    background-image: url("../images/hbo-hover_0.webp");
+  }
+  
+  /* Max Originals Content */
+  
+  .card-galeria:nth-child(2):hover {
+    background-image: url("../images/MAX-Hover.webp");
+  }
+  
+  /* DC Content */
+  
+  .card-galeria:nth-child(3):hover {
+    background-image: url("../images/DC-Hover.webp");
+  }
+  
+  /* WB Content */
+  
+  .card-galeria:nth-child(4):hover {
+    background-image: url("../images/WB-Hover.webp");
+  }
+  
+  /* CN Content */
+  
+  .card-galeria:nth-child(5):hover {
+    background-image: url("../images/CN-Hover.png");
+  }
+  
+  /* Champions League Content */
+  
+  .card-galeria:nth-child(6):hover {
+    background-image: url("../images/UCL-Hover.webp");
+  }
+  
